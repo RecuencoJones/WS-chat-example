@@ -29,4 +29,6 @@ dependencies {
     compile("org.springframework:spring-messaging")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     compile 'jstl:jstl:1.2'
-} 
+}
+
+war.archiveName 'wsapp.war'
