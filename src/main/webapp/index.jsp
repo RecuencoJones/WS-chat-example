@@ -28,7 +28,7 @@
                 <div class="log-box">
                     <p class="message"><strong>System</strong>: Welcome to the chatgle!</p>
                     <p class="message" ng-repeat="message in messages | orderBy: '+date'">
-                        <strong>{{message.who}}</strong>: {{message.message}}
+                        <strong>{{message.date | date: '[HH:mm]'}}{{message.who}}</strong>: {{message.message}}
                     </p>
                 </div>
                 <div class="message-box">
@@ -43,10 +43,10 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <button class="btn btn-success" ng-click="flushMessages()" ng-hide="newMessages.length == 0">{{newMessages.length}} new messages</button>
-                        </div>
                     </form>
+                    <div class="notification">
+                        <button class="btn btn-success" ng-click="flushMessages()" ng-hide="newMessages.length == 0">{{newMessages.length}} new messages</button>
+                    </div>
                 </div>
             </div>
         </div>

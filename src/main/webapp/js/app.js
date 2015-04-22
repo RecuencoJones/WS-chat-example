@@ -12,12 +12,12 @@ angular.module('starter', [])
             {
                 who: "Dummy1",
                 message: "My first message",
-                date: 1
+                date: new Date().getTime()-1
             },
             {
                 who: "Dummy2",
                 message: "Oh well, fuck u 2",
-                date: 2
+                date: new Date().getTime()
             }];
         
         $scope.newMessages = [ ];

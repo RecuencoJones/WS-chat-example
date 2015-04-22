@@ -25,5 +25,10 @@ html, body {
     padding-top: 10px;
     height: 10%;
     width: 100%;
+    display: flex;
+}
+
+.notification {
+    margin-left: 10px;
 }
 
